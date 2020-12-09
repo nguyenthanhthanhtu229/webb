@@ -1,0 +1,17 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        <!--LoginAction này là ben phía login.jsp k phải ten file-->
+        <action name="LoginAction" class="tuntt.action.LoginAction">
+            <result name="admin">admin.jsp</result>
+            <result name="user">user.jsp</result>
+            <result name="error">error.jsp</result>
+            <result name="input">login.jsp</result>
+        </action>
+      
+    </package>
+</struts>
